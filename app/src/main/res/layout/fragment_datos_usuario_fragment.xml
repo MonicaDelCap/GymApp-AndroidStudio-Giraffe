@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".datosUsuario_fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/degradado"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:paddingTop="60dp"
+                android:text="GYM FIT MB"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="322dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_weight="1"
+                    android:background="@mipmap/grasacorporal"
+                    android:paddingLeft="10dp" />
+
+                <LinearLayout
+                    android:layout_width="388dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="80dp"
+                        android:text="Monica"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="34sp" />
+
+                    <TextView
+                        android:id="@+id/textViewEdad"
+                        android:layout_width="match_parent"
+                        android:layout_height="68dp"
+                        android:layout_marginTop="0dp"
+                        android:text="20"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="34sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="103dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewPeso"
+                    android:layout_width="242dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="20dp"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="34sp" />
+
+                <TextView
+                    android:id="@+id/textViewAltura"
+                    android:layout_width="217dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="@color/black"
+                    android:textSize="34sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewMasaCorporal"
+                android:layout_width="match_parent"
+                android:layout_height="177dp"
+                android:paddingLeft="100dp"
+                android:paddingTop="10dp"
+                android:text="IMC --> 18.5 %"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="34sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

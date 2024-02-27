@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degradadoregister">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextNombre"
+                style="@style/registerEditText"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:inputType="text"
+                android:hint="@string/username" />
+
+            <EditText
+                android:id="@+id/editTextEdad"
+                style="@style/registerEditText"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/black"
+                android:inputType="text"
+                android:hint="@string/age" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextDni"
+            style="@style/registerEditText"
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/dni" />
+
+        <EditText
+            android:id="@+id/editTextTelefono"
+            style="@style/registerEditText"
+            android:inputType="text"
+            android:hint="@string/telefono" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            style="@style/registerEditText"
+            android:inputType="text"
+            android:hint="@string/email" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            style="@style/registerEditText"
+            android:hint="@string/contrasenia"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextPeso"
+                style="@style/registerEditText"
+                android:layout_width="143dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:hint="@string/peso"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/editTextAltura"
+                style="@style/registerEditText"
+                android:layout_width="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="0dp"
+                android:hint="@string/altura"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="333dp"
+            android:layout_height="104dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewPolitica"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="A través de este sitio web no se recaban datos de carácter personal de las personas usuarias sin su conocimiento, ni se ceden a terceros.  Con la finalidad de ofrecerle el mejor servicio y con el objeto de facilitar el uso, se analizan el número de páginas visitadas, el número de visitas, así como la actividad de las persona visitantes y su frecuencia de utilización. A estos efectos, la Agencia Española de Protección de Datos (AEPD) utiliza la información estadística elaborada por el Proveedor de Servicios de Internet.  La AEPD no utiliza cookies para recoger información de las personas usuarias, ni registra las direcciones IP de acceso. Únicamente se utilizan cookies propias, de sesión, con finalidad técnica (aquellas que permiten la navegación a través del sitio web y la utilización de las diferentes opciones y servicios que en ella existen).  El portal del que es titular la AEPD contiene enlaces a sitios web de terceros, cuyas políticas de privacidad son ajenas a la de la AEPD. Al acceder a tales sitios web usted puede decidir si acepta sus políticas de privacidad y de cookies. Con carácter general, si navega por internet usted puede aceptar o rechazar las cookies de terceros desde las opciones de configuración de su navegador.  " />
+            </LinearLayout>
+        </ScrollView>
+
+        <CheckBox
+            android:id="@+id/checkBoxPolitica"
+            android:layout_width="259dp"
+            android:layout_height="31dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/politicaPriv" />
+
+        <Button
+            android:id="@+id/buttonResgitrar"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/orange"
+            android:insetLeft="80dp"
+            android:insetRight="80dp"
+            android:insetBottom="0dp"
+            android:text="@string/botonRegistro"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
