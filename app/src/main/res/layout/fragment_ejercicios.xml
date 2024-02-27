@@ -7,6 +7,8 @@
 
     <ListView
         android:id="@+id/listView"
+        android:divider="@drawable/degradado"
+        android:dividerHeight="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingTop="20dp" />
