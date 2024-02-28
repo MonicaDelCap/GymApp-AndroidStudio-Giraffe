@@ -14,7 +14,7 @@ public ViewPagerAdapter(FragmentManager fm) {
     public Fragment getItem(int position) {
         Fragment fragment = null;
         if (position == 0) {
-            fragment = new datosUsuario_fragment();
+            fragment = new DatosUsuario_fragment();
         } else if (position == 1) {
             fragment = new ejerciciosFragment();
         }

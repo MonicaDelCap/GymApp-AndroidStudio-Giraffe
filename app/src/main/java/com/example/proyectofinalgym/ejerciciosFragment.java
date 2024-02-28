@@ -87,8 +87,6 @@ public class ejerciciosFragment extends Fragment {
 
                 imageView.setBackground(image[position]);
 
-
-
                 return view;
             }
         };

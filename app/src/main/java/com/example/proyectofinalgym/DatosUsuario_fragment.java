@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 
-public class datosUsuario_fragment extends Fragment {
+public class DatosUsuario_fragment extends Fragment {
 
 
     private TextView textViewName,textViewEdad,textViewPeso,textViewAltura,textViewMasaCorporal;

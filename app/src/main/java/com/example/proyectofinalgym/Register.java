@@ -46,8 +46,7 @@ public class Register extends AppCompatActivity {
         buttonResgitrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!editTextDni.getText().toString().equals("") && !editTextEmail.getText().toString().equals("") && !editTextPassword.getText().toString().equals("")) {
-
+                if (camposValidos()) {
                     if (checkBoxPolitica.isChecked()) {
                         if (comprobarDni(editTextDni.getText().toString())) {
                             User user = new User(editTextEmail.getText().toString(), editTextPassword.getText().toString()
@@ -77,7 +76,9 @@ public class Register extends AppCompatActivity {
 
     }
 
-
+    private boolean camposValidos() {
+        return !editTextDni.getText().toString().equals("") && !editTextEmail.getText().toString().equals("") && !editTextPassword.getText().toString().equals("");
+    }
     public EditText getEditTextNombre() {
         return editTextNombre;
     }
